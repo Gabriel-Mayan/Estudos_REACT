@@ -1,0 +1,51 @@
+.institucional{	
+	width: 35vw;
+	padding: 1%;
+	
+	display: grid;
+	row-gap: 2vh;
+	grid-template-rows: 0.1fr repeat(6, 1fr);
+
+	justify-content:space-evenly;
+}
+
+.sessao{
+	display: grid;
+	column-gap: 2vh;
+	grid-template-areas: 'img txt';
+	grid-template-columns: min-content;
+	
+	max-width: 25vw;
+	max-height: 10vh;
+
+	padding: 1vh;
+	align-items: center;	
+
+	border-radius: 2vh;
+	border: 1px solid black;
+
+	box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.2);
+	background-color: #f8fc0080;
+
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.image-inst{
+	grid-area: img;
+	
+	width: 5vw;
+	height: 10vh;
+
+	border-radius: 1vh;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+	
+	align-self: center;
+	justify-self: center;
+}
+
+.text-inst{
+	grid-area: txt;
+	font-size: 20px;
+	margin-left: 2vw;
+}

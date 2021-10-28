@@ -1,0 +1,52 @@
+.header{	
+	height: 15vh;
+	max-width: 96vw;
+
+	display: grid;
+	grid-template-areas: 'logo txt btn' 'logo list btn';
+	
+	align-items: center;
+	justify-items: center;
+	
+	padding: 1.5vh;
+	background-color: #4484ce80;
+
+	overflow: hidden;
+}
+
+.header_logo{
+	grid-area: logo;
+
+	cursor: pointer;
+	max-height: 10vh;
+
+	margin-left: 5%;
+	justify-self: flex-start;
+}
+
+.header_text{
+	grid-area: txt;
+}
+
+.header_list{
+	grid-area: list;
+	
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.header_list-item{
+	margin: 8px;
+	cursor: pointer;
+}
+
+.header_btn{
+	grid-area: btn;
+	
+	border: 2px solid black;
+	border-radius: 5vh;
+
+	padding: 2vh;
+	cursor: pointer;
+	background-color: #4484ce;
+}
