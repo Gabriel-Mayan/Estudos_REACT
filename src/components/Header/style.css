@@ -1,6 +1,6 @@
 .header{	
+	width: 96vw;
 	height: 15vh;
-	max-width: 96vw;
 
 	display: grid;
 	grid-template-areas: 'logo txt btn' 'logo list btn';

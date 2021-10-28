@@ -26,6 +26,19 @@ export default function News() {
 		}
 	}
 
+	const gerarDescricao = (type) => {
+		switch (type) {
+			case 'Luto':
+				return 'Noticia de Falecimento';
+			case 'Geral':
+				return 'Noticias Gerais';
+			case 'Previdencia':
+				return 'Noticias Previdencias';
+			case 'Financas':
+				return 'Noticias Financeiras';
+		}
+	}
+
 	const editarNoticia = (noticia) => {
 		if (noticia.length > 400) {
 			noticia = noticia.slice(0, 400);
@@ -38,8 +51,8 @@ export default function News() {
 		<div className='news'>
 			<h4 className='chamada'>Notícias</h4>
 			{noticias.map(noticia => (
-				<div className='noticia'>
-					<img className='image-news' src={gerarImagem(noticia.type)} />
+				<div className='noticia' key={noticia.title}>
+					<img className='image-news' src={gerarImagem(noticia.type)} alt={gerarDescricao(noticia.type)} />
 					<p className='title-news'> {noticia.title}</p>
 					<p className='text-news'> {editarNoticia(noticia.news)}</p>
 					<a href={noticia.link} className='read-more'>Leia Mais</a>

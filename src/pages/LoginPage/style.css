@@ -1,7 +1,7 @@
 .login{
 	display: grid;
-	min-width: 95vw;
-	min-height: 95vh;
+	min-width: 100vw;
+	min-height: 100vh;
 	place-content: center;
 }
 

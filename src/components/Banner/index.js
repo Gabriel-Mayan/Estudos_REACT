@@ -23,10 +23,10 @@ export default function Banner() {
 
 	return (
 		<div className='banner' style={{ backgroundImage: `url(${banners[0].link})` }}>
-			{banners.length > 1 ? <img className='back' src={Back} /> : ''}
-			{banners.length > 1 ? <img className='next' src={Next} /> : ''}
+			{banners.length > 1 ? <img className='back' src={Back} alt='Banner Anterior' /> : ''}
+			{banners.length > 1 ? <img className='next' src={Next} alt='Próximo Banner' /> : ''}
 			<div className='div-circle'>
-				{banners.map(() => (<img className='circle' src={Circle} />))}
+				{banners.map(() => (<img className='circle' src={Circle} alt='Selecione o Banner' key='a' />))}
 			</div>
 		</div>
 	)

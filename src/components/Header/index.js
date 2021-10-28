@@ -15,12 +15,12 @@ function Header() {
 
 	return (
 		<div className='header'>
-			<img className='header_logo' src={Logo} />
+			<img className='header_logo' src={Logo} alt='Logo da Ecos' />
 			<h1 className='header_text'>O Futuro Sempre Presente!</h1>
 			<div className='header_list'>
-				{itens.map(item => (<p className='header_list-item'> {item.title}</p>))}
+				{itens.map(item => (<p className='header_list-item' key={item.title}> {item.title}</p>))}
 			</div>
-			<a className='header_btn' href="/login">Área do Participante</a>
+			<a href='/login'><button>Área do Participante </button></a>
 		</div>
 	);
 }

@@ -1,11 +1,11 @@
 .footer{
-	height: 38vh;
-	width: 100vw;
+	width: 97.5vw;
+	height: 40.5vh;
 
 	display: grid;
 	justify-content: space-between;
 	grid-template-areas: 'rso rso rso' 'logos prod ctt' 'cop cop cop';
-	
+
 	overflow: hidden;
 	background-color: #afafaf80;
 }
@@ -23,6 +23,14 @@
 	overflow: hidden;
 	color: rgb(236, 236, 236);
 	background-color: #4484ce;
+}
+
+.icon{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-items: center;	
+	justify-content: space-between;	
 }
 
 .social-icon{
