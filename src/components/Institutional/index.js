@@ -9,7 +9,7 @@ import Conduta from '../../assets/institutional_megaphone.svg';
 
 export default function Institutional() {
 
-	const inst = [
+	const institucional = [
 		{ type: 'Eventos', alt: 'Eventos', img: Evento, link: '/eventos' },
 		{ type: 'Calendario', alt: 'Calendario', img: Calendario, link: '/calendario' },
 		{ type: 'Aniversariantes', alt: 'Aniversariantes', img: Aniversariantes, link: '/aniversariantes' },
@@ -20,9 +20,9 @@ export default function Institutional() {
 
 	return (
 		<div className='institucional'>
-			<h4 className='chamada'>Institucional</h4>
-			{inst.map(inst => (
-				<a href={inst.link}>
+			<p className='chamada'>Institucional</p>
+			{institucional.map(inst => (
+				<a href={inst.link} key={`Inst_${institucional.indexOf(inst)}`}>
 					<div className='sessao' >
 						<img className='image-inst' src={inst.img} alt={inst.alt} />
 						<p className='text-inst'> {inst.type}</p>

@@ -27,17 +27,19 @@
 	align-self: flex-end;
 }
 
-.next{
+.banner_proximo{
 	grid-area: next;
+	margin-right: 2vh;
 	justify-self: right;
 }
 
-.back{
+.banner_anterior{
 	grid-area: back;
-	justify-self: left;
+	margin-left: 2vh;
+	justify-self: left;	
 }
 
-.next, .back{
+.banner_proximo, .banner_anterior{
 	max-width: 5vh;
 	max-height: 5vh;
 

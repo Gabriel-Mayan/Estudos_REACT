@@ -5,9 +5,10 @@ import Abrapp from '../../assets/selo_abrapp.png';
 import Autoregulacao from '../../assets/selo_autoregulação.png';
 import ConselhoFis from '../../assets/selo_conselho_fiscal.png';
 import ConselhoDel from '../../assets/selo_conselho_deliberativo.png';
-import IWhatsapp from '../../assets/icon_whatsapp.png';
-import IFacebook from '../../assets/icon_facebook.png';
-import IInstagram from '../../assets/icon_instagram.png';
+
+import IWhatsapp from '../../assets/icon_whatsapp.svg';
+import IFacebook from '../../assets/icon_facebook.svg';
+import IInstagram from '../../assets/icon_instagram.svg';
 
 export default function Footer() {
 
@@ -26,20 +27,18 @@ export default function Footer() {
 		<div className='footer'>
 
 			<div className='social-media'>
-				<session>
-					<h3>Faça contato com a gente através de nossas redes sociais:</h3>
-				</session>
+				<p>Faça contato com a gente através de nossas redes sociais:</p>
 				<div className='icon'>
-					{selos.map(selo => (selo.tipo === 'social-icon' ? <a href={selo.link} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'social-icon' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 			</div>
 
 			<div className='selos'>
 				<div>
-					{selos.map(selo => (selo.tipo === 'pareceiros' ? <a href={selo.link} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'pareceiros' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 				<div>
-					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <a href={selo.link} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 			</div>
 
