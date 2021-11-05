@@ -1,10 +1,10 @@
 import './style.css';
 
-import Previc from '../../assets/selo_previc.png';
-import Abrapp from '../../assets/selo_abrapp.png';
-import Autoregulacao from '../../assets/selo_autoregulação.png';
-import ConselhoFis from '../../assets/selo_conselho_fiscal.png';
-import ConselhoDel from '../../assets/selo_conselho_deliberativo.png';
+import Previc from '../../assets/selo_previc.svg';
+import Abrapp from '../../assets/selo_abrapp.svg';
+import Autoregulacao from '../../assets/selo_autoregulação.svg';
+import ConselhoFis from '../../assets/selo_conselho_fiscal.svg';
+import ConselhoDel from '../../assets/selo_conselho_deliberativo.svg';
 
 import IWhatsapp from '../../assets/icon_whatsapp.svg';
 import IFacebook from '../../assets/icon_facebook.svg';

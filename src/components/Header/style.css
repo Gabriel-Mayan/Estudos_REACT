@@ -28,7 +28,7 @@
 	grid-area: txt;
 }
 
-.header_list{
+.header_menu{
 	grid-area: list;
 	
 	display: grid;
