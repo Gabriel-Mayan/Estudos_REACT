@@ -1,6 +1,6 @@
 import './style.css';
 import { useHistory } from 'react-router';
-import ListaRecursiva from '../Another/ListaRecursiva';
+import ListaRecursiva from '../../services/GerarListaRecursiva';
 
 import Logo from '../../assets/logo_ecos.svg';
 import Menu from '../../data/header_menu.json';
