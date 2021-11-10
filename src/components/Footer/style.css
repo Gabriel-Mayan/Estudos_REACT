@@ -7,7 +7,7 @@
 	grid-template-areas: 'rso rso rso' 'logos prod ctt' 'cop cop cop';
 
 	overflow: hidden;
-	background-color: #afafaf80;
+	background-color: #afafaf;
 }
 
 .social-media{
@@ -86,7 +86,7 @@
 	justify-content: center;
 
 	color: rgb(46, 44, 44);
-	background-color: #f8fc0080;
+	background-color: #f8fc00;
 }
 
 .social-media p{

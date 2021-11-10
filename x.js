@@ -6,13 +6,3 @@ const noticias = [
 ];
 
 console.log(JSON.stringify(noticias, 'null', '\t'))
-
-/*
-	const gerarSubitens = (item) => {
-		item.map(item => {
-			if (item.subitens) {
-				gerarSubitens(item.subitens)
-			}
-		})
-	}
-*/

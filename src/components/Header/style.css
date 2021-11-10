@@ -1,7 +1,7 @@
 .header{	
 	width: 96vw;
 	height: 15vh;
-
+	
 	display: grid;
 	grid-template-areas: 'logo txt btn' 'logo list btn';
 	
@@ -9,7 +9,7 @@
 	justify-items: center;
 	
 	padding: 1.5vh;
-	background-color: #4484ce80;
+	background-color: #4484ce;
 
 	overflow: hidden;
 }
@@ -28,18 +28,6 @@
 	grid-area: txt;
 }
 
-.header_menu{
-	grid-area: list;
-	
-	display: grid;
-	grid-auto-flow: column;
-}
-
-.header_list-item{
-	margin: 8px;
-	cursor: pointer;
-}
-
 .header_btn{
 	grid-area: btn;
 	
@@ -47,5 +35,44 @@
 	cursor: pointer;
 	border-radius: 4vh;
 	border: 1px solid black;
-	background-color: #4484ce80;
+	background-color: #4484ce;
+}
+
+.header_menu{
+	grid-area: list;	
+
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.lista{
+	float:left;
+	list-style:none;
+}
+
+.sublista{
+	float:left;
+	display: block;
+}
+
+.lista li a {	
+	color:#333; 
+	display:block;
+	padding:5px 10px; 
+	text-decoration:none; 
+}
+
+.lista li a:hover {	
+	color:#fff;
+	display: block;
+	background:#333;
+}
+
+.sublista{
+	display: none;
+	position:absolute;
+}
+
+.lista:hover li .sublista{
+	display:block;
 }

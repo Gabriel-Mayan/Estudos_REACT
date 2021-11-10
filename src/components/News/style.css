@@ -24,7 +24,7 @@
 	border: 1px solid black;
 
 	box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.2);
-	background-color: #f19f4d80;
+	background-color: #f19f4d;
 
 	overflow: hidden;
 }
@@ -43,7 +43,7 @@
 	align-self: center;
 	justify-self: center;
 	
-	background-color: #f19f4d80;
+	background-color: #f19f4d;
 }
 
 .title-news{

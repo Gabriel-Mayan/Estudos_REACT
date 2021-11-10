@@ -1,5 +1,6 @@
 import './style.css';
 import { useHistory } from 'react-router';
+import ListaRecursiva from '../Another/ListaRecursiva';
 
 import Logo from '../../assets/logo_ecos.svg';
 import Menu from '../../data/header_menu.json';
@@ -15,13 +16,7 @@ function Header() {
 		<div className='header'>
 			<img className='header_logo' src={Logo} alt='Logo da Ecos' onClick={redirHome} />
 			<h1 className='header_text'>O Futuro Sempre Presente!</h1>
-			<div className='header_menu'>
-				<ul className='menu'>
-					{Menu.map(item => (
-						<a className='header_list-item' key={item.title} href={item.link}> {item.title}</a>
-					))}
-				</ul>
-			</div>
+			{<ListaRecursiva className='header_menu' informacao={Menu} />}
 			<button onClick={redirLogin} className='header_btn'>Área do Participante </button>
 		</div>
 	);
