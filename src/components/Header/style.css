@@ -3,11 +3,13 @@
 	height: 15vh;
 	
 	display: grid;
+	grid-template-rows: 1fr minmax(auto, 20%);
 	grid-template-areas: 'logo txt btn' 'logo list btn';
-	
+
 	align-items: center;
 	justify-items: center;
 	
+	color: white;
 	padding: 1.5vh;
 	background-color: #4484ce;
 
@@ -51,28 +53,27 @@
 }
 
 .sublista{
-	float:left;
-	display: block;
+	display: none;
+	position:absolute;
+	background-color: white;
+
+	padding: 1vh;
+	margin-top: -0.5%;
 }
 
 .lista li a {	
 	color:#333; 
 	display:block;
 	padding:5px 10px; 
-	text-decoration:none; 
+	text-decoration:none;
+}
+
+.lista:hover li .sublista{
+	display:block;
 }
 
 .lista li a:hover {	
 	color:#fff;
 	display: block;
 	background:#333;
-}
-
-.sublista{
-	display: none;
-	position:absolute;
-}
-
-.lista:hover li .sublista{
-	display:block;
 }

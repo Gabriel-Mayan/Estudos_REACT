@@ -4,16 +4,20 @@
 
 	display: grid;
 	row-gap: 2vh;
-	grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;
-	
+	grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;	
+}
+
+.chamada{
+	justify-self: center;
 }
 
 .noticia{
 	display: grid;
 	column-gap: 3vh;
 	grid-template-columns: min-content;
-	grid-template-areas: 'img tit tit' 'img txt read';
-	
+	grid-template-areas: 'img info read' 'img info read';
+	grid-template-rows: 1fr minmax(auto, 20%);
+
 	max-width: 75vw;
 	max-height: 15vh;
 	
@@ -27,6 +31,11 @@
 	background-color: #f19f4d;
 
 	overflow: hidden;
+}
+
+.content-news{
+	grid-area: info;
+	align-self: flex-start;
 }
 
 .image-news{
@@ -47,14 +56,11 @@
 }
 
 .title-news{
-	grid-area: tit;
 	font-size: 16px;
-	justify-self: center;
 	align-self: flex-start;
 }
 
 .text-news{
-	grid-area: txt;
 	font-size: 12px;
 	align-self: flex-start;
 }

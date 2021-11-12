@@ -52,8 +52,10 @@ export default function News() {
 			{Noticias.map(noticia => (
 				<div className='noticia' key={noticia.title}>
 					<img className='image-news' src={gerarImagem(noticia.type)} alt={gerarDescricao(noticia.type)} />
-					<p className='title-news'> {noticia.title}</p>
-					<p className='text-news'> {editarNoticia(noticia.news)}</p>
+					<div className='content-news'>
+						<p className='title-news'> {noticia.title}</p>
+						<p className='text-news'> {editarNoticia(noticia.news)}</p>
+					</div>
 					<a href={noticia.link} className='read-more'>Leia Mais</a>
 				</div>
 			))}
