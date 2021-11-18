@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 
 import Previc from '../../assets/selo_previc.svg';
 import Abrapp from '../../assets/selo_abrapp.svg';
@@ -29,16 +30,16 @@ export default function Footer() {
 			<div className='social-media'>
 				<p>Faça contato com a gente através de nossas redes sociais:</p>
 				<div className='icon'>
-					{selos.map(selo => (selo.tipo === 'social-icon' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'social-icon' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
 				</div>
 			</div>
 
 			<div className='selos'>
 				<div>
-					{selos.map(selo => (selo.tipo === 'pareceiros' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'pareceiros' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
 				</div>
 				<div>
-					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`} ><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
+					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
 				</div>
 			</div>
 

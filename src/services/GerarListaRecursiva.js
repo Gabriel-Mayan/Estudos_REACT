@@ -1,26 +1,30 @@
-const ListaRecursiva = ({ className, informacao }) => {
+import { Link } from "react-router-dom";
+
+const Lista = ({ className, informacao }) => {
 	return <ul className={className}>{informacao.map(renderizar)}</ul>
 }
 
 const SubLista = ({ item }) => (
-	<ul className='lista'>
+	<ul className='item'>
+		<Item title={item.title} link={item.link} key={`${item.title}-item-${item.link}`} />
 		<li>
-			<Item title={item.title} link={item.link} key={`${item.title}-item-${item.link}`} />
-			<ul className='sublista'>{item.subitens.map(renderizar)}</ul>
+			<ul className='sublista' key={`${item.title}-sublista-${item.link}`}>{item.subitens.map(renderizar)}</ul>
 		</li>
 	</ul>
 );
 
 const Item = ({ title, link }) => (
-	<a href={link} key={`${title}-item-${link}`}> {title}</a>
+	<li>
+		<Link to={link} key={`${title}-item-${link}`}> {title}</Link>
+	</li>
 );
 
 const renderizar = item => {
 	const render = item.subitens ?
 		(<SubLista item={item} key={`${item.title}-list`} />) :
-		(<li><Item title={item.title} link={item.link} key={`${item.title}-item-${item.link}`} /></li>);
+		(<ul className='item'><Item title={item.title} link={item.link} key={`${item.title}-item-${item.link}`} /></ul>);
 
 	return render;
 };
 
-export default ListaRecursiva;
+export default Lista;

@@ -15,7 +15,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 function RotasProtegidas(props) {
 	const { token } = useAuth();
 	return (
-		<Route render={() => (token ? props.children : <Redirect to="/" />)} />
+		<Route render={() => (token ? props.children : <Redirect to="/home" />)} />
 	);
 }
 
@@ -24,9 +24,12 @@ function Routes() {
 		<AuthProvider>
 			<Router>
 				<Switch>
-					<Route path="/" exact component={HomePage} />
+					<Route path="/home" exact component={HomePage} />
 					<Route path="/login" component={LoginPage} />
+					<Route path="/cadastro" component={LoginPage} />
+					<Route path="/manutencaousuario" component={LoginPage} />
 					<RotasProtegidas>
+						<Route path="/userpage" component={LoginPage} />
 					</RotasProtegidas>
 				</Switch>
 			</Router>

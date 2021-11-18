@@ -1,11 +1,12 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 
 import Evento from '../../assets/institutional_event.svg';
-import Calendario from '../../assets/institutional_date.svg';
-import Aniversariantes from '../../assets/institutional_birthday.svg';
 import Revista from '../../assets/institutional_book.svg';
-import Atendimento from '../../assets/institutional_letter.svg';
+import Calendario from '../../assets/institutional_date.svg';
 import Conduta from '../../assets/institutional_megaphone.svg';
+import Atendimento from '../../assets/institutional_letter.svg';
+import Aniversariantes from '../../assets/institutional_birthday.svg';
 
 export default function Institutional() {
 
@@ -22,12 +23,10 @@ export default function Institutional() {
 		<div className='institucional'>
 			<p className='chamada'>Institucional</p>
 			{institucional.map(inst => (
-				<a href={inst.link} key={`Inst_${institucional.indexOf(inst)}`}>
-					<div className='sessao' >
-						<img className='image-inst' src={inst.img} alt={inst.alt} />
-						<p className='text-inst'> {inst.type}</p>
-					</div>
-				</a>
+				<Link className='sessao' to={inst.link} key={`Inst_${institucional.indexOf(inst)}`}>
+					<img className='image-inst' src={inst.img} alt={inst.alt} />
+					<p className='text-inst'> {inst.type}</p>
+				</Link>
 			))}
 		</div>
 	)

@@ -31,11 +31,51 @@
 		"subitens": [
 			{
 				"title": "Plano BD",
-				"link": "/planobd"
+				"link": "",
+				"subitens": [
+					{
+						"title": "Regulamento BD",
+						"link": ""
+					},
+					{
+						"title": "Cartilha BD",
+						"link": ""
+					},
+					{
+						"title": "Formulários BD",
+						"link": ""
+					},
+					{
+						"title": "Patrocinadoras BD",
+						"link": ""
+					}
+				]
 			},
 			{
 				"title": "Plano CD",
-				"link": "/planocd"
+				"link": "",
+				"subitens": [
+					{
+						"title": "Regulamento CD",
+						"link": ""
+					},
+					{
+						"title": "Cartilha CD",
+						"link": ""
+					},
+					{
+						"title": "Simulador",
+						"link": ""
+					},
+					{
+						"title": "Formulários CD",
+						"link": ""
+					},
+					{
+						"title": "Patrocinadoras CD",
+						"link": ""
+					}
+				]
 			}
 		]
 	},

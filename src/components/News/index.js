@@ -1,4 +1,6 @@
 import './style.css';
+import { Link } from 'react-router-dom';
+
 import Luto from '../../assets/news_luto.svg';
 import Geral from '../../assets/news_geral.svg';
 import Financas from '../../assets/news_financas.svg';
@@ -56,10 +58,10 @@ export default function News() {
 						<p className='title-news'> {noticia.title}</p>
 						<p className='text-news'> {editarNoticia(noticia.news)}</p>
 					</div>
-					<a href={noticia.link} className='read-more'>Leia Mais</a>
+					<Link to={noticia.link} className='read-more'>Leia Mais	</Link>
 				</div>
 			))}
-			<p className='more-news'>Mais Notícias</p>
+			<Link to={'/noticias'} className='more-news'>Mais Notícias	</Link>
 		</div>
 	)
 }
