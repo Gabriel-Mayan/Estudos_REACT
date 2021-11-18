@@ -1,20 +1,17 @@
 .institucional{	
-	width: 35vw;
+	width: max-content;
 	padding: 1%;
 	
 	display: grid;
 	row-gap: 2vh;
-	grid-template-rows: 0.1fr repeat(6, 1fr);
-
-	justify-content:space-evenly;
+	grid-template-rows: 0.1fr repeat(6, 1fr) 0.1fr;		
 }
 
 .sessao{
 	display: grid;
-	column-gap: 2vh;
 	grid-template-areas: 'img txt';
 	grid-template-columns: min-content;
-	
+
 	max-width: 25vw;
 	max-height: 10vh;
 
@@ -28,18 +25,25 @@
 	background-color: #f8fc00;
 
 	cursor: pointer;
-	overflow: hidden;
+	overflow: hidden;	
+	text-decoration: none;
+}
+
+.sessao:hover{
+	background-color: #f8fc0091;
 }
 
 .image-inst{
 	grid-area: img;
 	
-	width: 5vw;
-	height: 10vh;
-
-	border-radius: 1vh;
-	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+	width: 4vw;
+	height: 8vh;
 	
+	padding: 1vh;
+	border-radius: 2vh;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+	margin-left: 1vh;	
 	align-self: center;
 	justify-self: center;
 }
@@ -47,5 +51,5 @@
 .text-inst{
 	grid-area: txt;
 	font-size: 20px;
-	margin-left: 2vw;
+	margin-left: 2vw;	
 }

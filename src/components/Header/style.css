@@ -21,7 +21,7 @@
 	cursor: pointer;
 	max-height: 10vh;
 
-	margin-left: 5%;
+	margin-left: 10%;
 	justify-self: flex-start;
 }
 
@@ -41,7 +41,8 @@
   
   color: #000000;
 	background: #ffae00;
-  
+	border: 0.1px solid black;
+
 	font-size: 14px;
 	font-weight: 600;
   line-height: 100%;

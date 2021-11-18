@@ -1,10 +1,10 @@
 .news{
-	padding: 1%;
 	width: 65vw;
+	padding: 1%;
 
 	display: grid;
 	row-gap: 2vh;
-	grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;		
+	grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;	
 }
 
 .chamada{
