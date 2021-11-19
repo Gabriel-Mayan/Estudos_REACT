@@ -1,10 +1,9 @@
 .footer{
-	width: 97.5vw;
+	width: 97.65vw;
 	height: 40.5vh;
 
 	display: grid;
 	justify-content: space-between;
-	grid-template-rows: 1fr minmax(auto);
 	grid-template-columns: 1fr minmax(auto, 20%);
 	grid-template-areas: 'rso rso rso' 'logos prod ctt' 'cop cop cop';
 

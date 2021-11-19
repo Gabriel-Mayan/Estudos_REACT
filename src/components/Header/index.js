@@ -9,14 +9,14 @@ function Header() {
 
 	const history = useHistory();
 
-	const redirHome = () => history.push('/');
+	const redirHome = () => history.push('/homepage');
 
 	return (
 		<div className='header'>
 			<img className='header_logo' src={Logo} alt='Logo da Ecos' onClick={redirHome} />
 			<h1 className='header_text'>O Futuro Sempre Presente!</h1>
 			{<Lista className='header_menu' informacao={Menu} />}
-			<Link to='/login' className='header_btn'> Área do Participante </Link>
+			<Link to='/user/login' className='header_btn'> Área do Participante </Link>
 		</div>
 	);
 }

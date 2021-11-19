@@ -1,17 +1,17 @@
 [
 	{
 		"id": 1,
-		"imgLink": "https://fundacaoecos.org.br/wp-content/uploads/2021/07/OSID-COM-LINK.jpg",
-		"refLink": "https://www.youtube.com/watch?v=um1Tv7dMCDw"
+		"url": "https://fundacaoecos.org.br/wp-content/uploads/2021/07/OSID-COM-LINK.jpg",
+		"link": "https://www.youtube.com/watch?v=um1Tv7dMCDw"
 	},
 	{
 		"id": 2,
-		"imgLink": "https://fundacaoecos.org.br/wp-content/uploads/2021/10/OUTUBRO-ROSA-2.jpg",
-		"refLink": ""
+		"url": "https://fundacaoecos.org.br/wp-content/uploads/2021/10/OUTUBRO-ROSA-2.jpg",
+		"link": ""
 	},
 	{
 		"id": 3,
-		"imgLink": "https://fundacaoecos.org.br/wp-content/uploads/2021/09/PRIMAVERA-OK.jpg",
-		"refLink": ""
+		"url": "https://fundacaoecos.org.br/wp-content/uploads/2021/09/PRIMAVERA-OK.jpg",
+		"link": ""
 	}
 ]

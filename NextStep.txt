@@ -1,10 +1,12 @@
--> Consertar rotas do footer
--> Criar interatividade com o banner
+-> Criar Páginas de Notícias
+-> Criar Modal de Leitura de Notícias
 
---> Implementar as novas rotas do menu header
---> Implementar as novas rotas do institucional
+---> Criar as Páginas do menu institucional
 
----> Criar o menu noticias
----> Implementar o "Leia mais" no menu noticias
+-----> Criar o pagina noticias
+-----> Implementar o "Leia mais" no menu noticias
 
-----> Fazer um Submenu nas rotas do menu header
+--------> Implementar as novas rotas do menu header
+--------> Fazer um Submenu nas rotas do menu header
+
+----------> Ajustar funcionalidades do banner (Transição suave, navegação pelos criculos e referenciar link's)

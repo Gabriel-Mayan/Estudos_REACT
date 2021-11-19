@@ -1,5 +1,4 @@
 import './style.css';
-import { Link } from 'react-router-dom';
 
 import Previc from '../../assets/selo_previc.svg';
 import Abrapp from '../../assets/selo_abrapp.svg';
@@ -16,9 +15,9 @@ export default function Footer() {
 	const selos = [
 		{ image: Abrapp, alt: 'Pareceiro Abrapp', link: 'https://www.abrapp.org.br/', tipo: 'pareceiros' },
 		{ image: Previc, alt: 'Pareceiro Previc', link: 'https://www.gov.br/economia/pt-br/orgaos/entidades-vinculadas/autarquias/previc', tipo: 'pareceiros' },
-		{ image: Autoregulacao, alt: 'Selo Autoregulação', link: '/', tipo: 'selo-ecos' },
-		{ image: ConselhoFis, alt: 'Selo Conselho Fiscal', link: '/', tipo: 'selo-ecos' },
-		{ image: ConselhoDel, alt: 'Selo Conselho Deliberativo', link: '/', tipo: 'selo-ecos' },
+		{ image: Autoregulacao, alt: 'Selo Autoregulação', link: '', tipo: 'selo-ecos' },
+		{ image: ConselhoFis, alt: 'Selo Conselho Fiscal', link: '', tipo: 'selo-ecos' },
+		{ image: ConselhoDel, alt: 'Selo Conselho Deliberativo', link: '', tipo: 'selo-ecos' },
 		{ image: IWhatsapp, alt: 'Whatsapp Ecos', link: 'https://api.whatsapp.com/send?phone=557181056741&text=Ecos', tipo: 'social-icon' },
 		{ image: IFacebook, alt: 'Facebook Ecos', link: 'https://web.facebook.com/Funda%C3%A7%C3%A3o-ECOS-683434135123846', tipo: 'social-icon' },
 		{ image: IInstagram, alt: 'Instagram Ecos', link: 'https://www.instagram.com/fundacaoecos/', tipo: 'social-icon' },
@@ -30,16 +29,16 @@ export default function Footer() {
 			<div className='social-media'>
 				<p>Faça contato com a gente através de nossas redes sociais:</p>
 				<div className='icon'>
-					{selos.map(selo => (selo.tipo === 'social-icon' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
+					{selos.map(selo => (selo.tipo === 'social-icon' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 			</div>
 
 			<div className='selos'>
 				<div>
-					{selos.map(selo => (selo.tipo === 'pareceiros' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
+					{selos.map(selo => (selo.tipo === 'pareceiros' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 				<div>
-					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <Link to={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></Link> : ''))}
+					{selos.map(selo => (selo.tipo === 'selo-ecos' ? <a href={selo.link} key={`selo_${selos.indexOf(selo)}`}><img className={selo.tipo} src={selo.image} alt={selo.alt} /></a> : ''))}
 				</div>
 			</div>
 

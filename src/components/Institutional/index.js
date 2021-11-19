@@ -11,12 +11,12 @@ import Aniversariantes from '../../assets/institutional_birthday.svg';
 export default function Institutional() {
 
 	const institucional = [
-		{ type: 'Eventos', alt: 'Eventos', img: Evento, link: '/eventos' },
-		{ type: 'Calendario', alt: 'Calendario', img: Calendario, link: '/calendario' },
-		{ type: 'Aniversariantes', alt: 'Aniversariantes', img: Aniversariantes, link: '/aniversariantes' },
-		{ type: 'Revista Tempo Ecos', alt: 'Revista Tempo Ecos', img: Revista, link: '/revista_tempo' },
-		{ type: 'Canais de Atendimento', alt: 'Canais de Atendimento', img: Atendimento, link: '/atendimento' },
-		{ type: 'Canal de Ética e Conduta', alt: 'Canal de Ética e Conduta', img: Conduta, link: '/etica_conduta' },
+		{ type: 'Eventos', alt: 'Eventos', img: Evento, link: '/institucional/eventos' },
+		{ type: 'Calendario', alt: 'Calendario', img: Calendario, link: '/institucional/calendario' },
+		{ type: 'Aniversariantes', alt: 'Aniversariantes', img: Aniversariantes, link: '/institucional/aniversariantes' },
+		{ type: 'Revista Tempo Ecos', alt: 'Revista Tempo Ecos', img: Revista, link: '/institucional/revistatempo' },
+		{ type: 'Canais de Atendimento', alt: 'Canais de Atendimento', img: Atendimento, link: '/institucional/canaisdeatendimento' },
+		{ type: 'Canal de Ética e Conduta', alt: 'Canal de Ética e Conduta', img: Conduta, link: '/institucional/eticaecondulta' },
 	]
 
 	return (
