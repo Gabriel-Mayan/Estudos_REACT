@@ -1,6 +1,6 @@
 .login{
 	display: grid;
-	gap: 10vh;
+	gap: 15vh;
 	grid-template-areas: 'head head head' ' log log log' 'foot foot foot';
 	
 	min-width: 100vw;

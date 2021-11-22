@@ -1,12 +1,13 @@
+->Criar página NovaSenha
+->Cirar página AtivarConta
+
 -> Criar Páginas de Notícias
 -> Criar Modal de Leitura de Notícias
+-> Implementar o "Leia mais" no menu noticias
 
 ---> Criar as Páginas do menu institucional
 
------> Criar o pagina noticias
------> Implementar o "Leia mais" no menu noticias
+-----> Implementar as novas rotas do menu header
+-----> Fazer um Submenu nas rotas do menu header
 
---------> Implementar as novas rotas do menu header
---------> Fazer um Submenu nas rotas do menu header
-
-----------> Ajustar funcionalidades do banner (Transição suave, navegação pelos criculos e referenciar link's)
+-------> Ajustar funcionalidades do banner (Transição suave e referenciar link's)

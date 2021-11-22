@@ -22,10 +22,8 @@ export default function Footer() {
 		{ image: IFacebook, alt: 'Facebook Ecos', link: 'https://web.facebook.com/Funda%C3%A7%C3%A3o-ECOS-683434135123846', tipo: 'social-icon' },
 		{ image: IInstagram, alt: 'Instagram Ecos', link: 'https://www.instagram.com/fundacaoecos/', tipo: 'social-icon' },
 	]
-
 	return (
 		<div className='footer'>
-
 			<div className='social-media'>
 				<p>Faça contato com a gente através de nossas redes sociais:</p>
 				<div className='icon'>

@@ -2,13 +2,15 @@
 	display: grid;
 	column-gap: 12vh;
 	grid-row-gap: 5vh;
-	grid-template-areas: 'head head' 'ban ban' 'news inst ' 'foot foot';
-	
 	grid-template-rows: 1fr minmax(auto, 20%);
-	grid-template-columns: 1fr minmax(auto);
+	grid-template-areas: 'head head' 'ban ban' 'news inst ' 'foot foot';
 
 	border-radius: 2vh;
 	background-color: #d9d9d9;
+}
+
+a{
+	text-decoration: none;
 }
 
 .header{
